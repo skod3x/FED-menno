@@ -5,11 +5,49 @@
   box-sizing:border-box;  
 }
 
-button, summary {
+button, summary { 
 	cursor: pointer;
 }
 
+.visually-hidden {
+	clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
+header > nav > ul > li {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+}
+
+.tekst1 {
+	height: auto;
+}
+
+.tekst2 li {
+	list-style: none;
+}
+
+.tekst3 li {
+	list-style: none;
+}
+
+.tekst4 li {
+	list-style: none;
+}
+
+/* section:first-child {
+	animation-name: bouncing-arrow; 
+	animation-duration: 2s; 
+	animation-iteration-count: infinite; 
+	transform-origin: center bottom;
+}
+ */
 
 
 

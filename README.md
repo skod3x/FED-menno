@@ -111,15 +111,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Begonnen met HTML, website blijkt toch meer uitdagend dan ik zelf dacht. Zit te twijfelen om toch nog te wisselen van site.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | idelene        | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | vraag over dit | en dit             | en ik dit    | en dan ik dat    |
+  | idelene        | Menno Leurs          | student 3    | student 4        |
+  | ---            | hoe gaat scalability? | ---          | ---              |
+  |vraag over dit |Hoever ben je met je site | en ik dit| en dan ik dat    |
   | en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
