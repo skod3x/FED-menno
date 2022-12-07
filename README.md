@@ -157,6 +157,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -hidden functions/JS
   -draggable carroussel 
 
+  vragen:
+  kleuren section 3 icons fixen
+  div weghalen section 3
+  menu foldout maken
+  
+
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
