@@ -86,7 +86,6 @@ main section:nth-of-type(2), main section:nth-of-type(3), main section:nth-of-ty
 	background-color: #182026;
 }
 
-
 main section:nth-of-type(1) {
 	padding:1em;
 	min-height:22.75em;
@@ -97,7 +96,7 @@ main section:nth-of-type(1) {
 	
 }
 
-main section img {
+main section:first-of-type img {
 	width:auto;
     height:auto;
     max-width:150%;
@@ -152,12 +151,16 @@ main section:nth-of-type(1) form button {
 }
 
 /* styling zoek evenementen */
+
 main section:nth-of-type(3) h2 {
+	padding-left:1em;
 	margin:0;
 }
 
 main section:nth-of-type(3) ul{
-	padding: 0;
+	/* display: grid;
+	justify-content: center; */
+	padding:0;
 	background-color: #182026;
 }
 
@@ -165,9 +168,10 @@ main section:nth-of-type(3) ul li{
 	display:grid;
 	grid-template-columns:5em 1fr;
 	column-gap:0;
-	margin: 1em; 
+	margin:1em; 
 	border-radius:1em;
 	background-color: rgba(1, 0, 15, 0.528);
+	max-width: 44em;
 	
 }
 
@@ -208,14 +212,65 @@ main section:nth-of-type(3) ul li svg path{
 	
 }
 
-/* Styling interview plaatjes en text */
+@media (min-width:48em) {
+	main section:nth-of-type(3)> ul > li {
+		width:44em;
+	}
 
-section:nth-of-type(4) h3:nth-of-type(1) {
-	position:absolute;
-	max-width: 90%;
-	background-image: url(https://cdn.ticketswap.com/public/202211/16ab9778-c4ed-402d-9995-00a8e6c5cdbf.8ca9ab54de3933398fb1f52c32cbf761d773a1af.png);
+	main section:nth-of-type(3) ul{
+		display: grid;
+		justify-content: center;
+		
 }
 
+/* Styling interview plaatjes en text */
+
+section:nth-of-type(4)> h2, section:nth-of-type(4)> p {
+	margin:1rem;
+}
+
+section:nth-of-type(4) ul {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	gap:1em;
+	list-style: none;
+	margin:0;
+	padding:1em;
+	
+}
+
+section:nth-of-type(4) li {
+	display: grid;
+	align-content: center;
+	gap:1em;
+	height:16em;
+	overflow: hidden;
+	border-radius: 1em;
+}
+
+section:nth-of-type(4) a {
+	display:block;
+	position: relative;
+	text-decoration: none;
+	color:white;
+}
+
+section:nth-of-type(4) div {
+	position:absolute;
+	bottom:3.5em;
+	left:1em;
+	z-index: 100;
+}
+
+section:nth-of-type(4) div * {
+	margin:0;
+}
+
+section:nth-of-type(4) img {
+	display:block;
+	
+}
 
 /* menu button */
 

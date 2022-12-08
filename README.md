@@ -183,29 +183,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+ -kleine hamburger button tijdens parkinson test
+ -contrast goed ook al is het een dark theme website
+ -website nog steeds goed te gebruiken met elastiekjes
+
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+goede headings, alleen form lastig toegankelijk met screenreader
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
+form button verstoppen 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ site goed bereikbaar met toetsenbord en muis
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  hamburger menu button lastig te klikken met parkinson
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+grotere menu knop
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+website is nog steeds goed te gebruiken met kleurenblindfilters
+alleen kleine items zijn moeilijk te vinden met de tunnelvisiebril 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
