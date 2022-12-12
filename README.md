@@ -225,7 +225,15 @@ alleen kleine items zijn moeilijk te vinden met de tunnelvisiebril
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Loop vaak tegen dingen aan waardoor ik niet verder kan gaan. Moet meer hulp vragen en eigenlijk wil ik continu vragen stellen. Door google kom ik soms toch verder.
+
+  vragen:
+  form groter maken
+  text in plaatjes gaan niet automatisch inspringen
+  section 3 boxes willen niet goed scalen (nu mediaport gebruikt)
+  random ruimte en pagina kan naar rechts scrollen 
+  alle sections responsive maken met zelfde margin links en rechts
+
 
 
   ### Agenda voor meeting
