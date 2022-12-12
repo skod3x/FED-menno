@@ -111,15 +111,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Begonnen met HTML, website blijkt toch meer uitdagend dan ik zelf dacht. Zit te twijfelen om toch nog te wisselen van site.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | idelene        | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | vraag over dit | en dit             | en ik dit    | en dan ik dat    |
+  | idelene        | Menno Leurs          | student 3    | student 4        |
+  | ---            | hoe gaat scalability? | ---          | ---              |
+  |vraag over dit |Hoever ben je met je site | en ik dit| en dan ik dat    |
   | en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -144,24 +144,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Tijd steken in FED ging goed, positioneren vond ik lastig en responsive maken ook.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  -responsiveness, positioneren in blocks
+  -tijd steken in FED
+  -hulp vragen
+  -hamburger-menu 
+  -hidden functions/JS
+  -draggable carroussel 
 
+  vragen:
+  kleuren section 3 icons fixen
+  div weghalen section 3
+  menu foldout maken
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - valt nog veel te doen  
+  - sommige lopen nog tegen dingen aan
   - nog een punt
 - ...
 
@@ -177,29 +183,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+ -kleine hamburger button tijdens parkinson test
+ -contrast goed ook al is het een dark theme website
+ -website nog steeds goed te gebruiken met elastiekjes
+
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+goede headings, alleen form lastig toegankelijk met screenreader
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
+form button verstoppen 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ site goed bereikbaar met toetsenbord en muis
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  hamburger menu button lastig te klikken met parkinson
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+grotere menu knop
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+website is nog steeds goed te gebruiken met kleurenblindfilters
+alleen kleine items zijn moeilijk te vinden met de tunnelvisiebril 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
@@ -214,7 +225,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Loop vaak tegen dingen aan waardoor ik niet verder kan gaan. Moet meer hulp vragen en eigenlijk wil ik continu vragen stellen. Door google kom ik soms toch verder.
+
+  vragen:
+  form groter maken
+  text in plaatjes gaan niet automatisch inspringen
+  section 3 boxes willen niet goed scalen (nu mediaport gebruikt)
+  random ruimte en pagina kan naar rechts scrollen 
+  alle sections responsive maken met zelfde margin links en rechts
+
 
 
   ### Agenda voor meeting

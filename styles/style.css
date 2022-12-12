@@ -1,39 +1,485 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: proxima-nova, sans-serif;
 }
 
-button, summary {
+button,
+summary {
+	cursor: pointer;
+}
+
+button:not(disabled) {
 	cursor: pointer;
 }
 
 
+/* ALGEMENE SHIT  */
 
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
-
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
 
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+	color: white;
+	background-color: #182026;
+	margin: 0;
 }
 
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+
+/* tekst shit  */
+
+
+h2 {
+	font-weight: 700;
+	font-style: normal;
+}
+
+h3 {
+
+	font-size: 1.1em;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p {
+	max-width: 75%;
+	font-size: .8em;
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+/* HEADER SHIT */
+
+header {
+	min-height: 3em;
+	padding: 0 1em;
+	line-height: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+}
+
+header a {
+	padding: .5em 0;
+	text-decoration: none;
+}
+
+header button {
+	padding: .5em;
+
+	/* icon en tekst met gap-je naast elkaar */
+	display: flex;
+	align-items: center;
+	gap: .25em;
+
+	/* standaard styling aanpassen */
+	appearance: none;
+	background-color:transparent;
+	border: none;
+	color: white;
+}
+
+header button svg {
+	height: 3em;
+}
+
+header button svg path {
+	fill:white;
+}
+
+
+/* navigatie perikelen */
+
+
+header>nav {
+	padding:1em;
+	display:grid;
+	align-content:start;
+	gap:1em;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #182026;
+	transform: translateX(-100%);
+	transition:transform .3s;
+}
+
+nav.toonMenu {
+	transform:translatex(0);
+  }
+
+nav button {
+	justify-self:end;
+}
+
+nav ul { 
+	margin:0; 
+	padding:0em;
+	list-style:none;
+}
+
+nav ul li {
+	justify-content: center;
+}
+
+nav a {
+	/* icon en tekst met gap-je naast elkaar */
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	column-gap:.25em;
+	
+	border-bottom:solid 1px var(--menu-border);
+  }
+
+/****************************************************************/
+/* Header styling bij groot scherm */
+/****************************************************************/
+
+@media (min-width:48em) {
+
+	header > button {
+		display:none;
+	}
+	
+	nav {
+		position:static;
+		transform:none;
+		padding:0;
+		background:none;
+	}
+	
+	nav button {
+		display:none;
+	}
+	
+	nav ul {
+		transform:translatex(110%);
+		display:flex;
+		justify-content: center;
+		gap:1em;
+	}
+
+	/* nav> ul li:first-of-type {
+		justify-self: flex-end;
+	} */
+
+	nav ul li a {
+		color:white;
+	}
+	
+	nav a {
+		flex-direction:column;
+		border:none;
+	}
+	
+	header > a:last-of-type {
+		flex-direction:column;
+	}
+  }
+
+/****************************************************************/
+/* styling header voor nog groter scherm */
+/****************************************************************/
+
+@media (min-width:43em) {
+	header > a:last-of-type,
+	nav a {
+		flex-direction:row;
+	}
+}
+
+/* logo */
+
+
+header>a svg {
+	width: 12em;
+	padding: 1em;
+}
+
+header>a svg path {
+	fill: white;
+}
+
+header>a:hover svg path {
+	fill: lightgrey;
+}
+
+
+
+/* main shit */
+
+main section:nth-of-type(2)>section:first-of-type,
+main section:nth-of-type(2)>main section:nth-of-type(2),
+main section:nth-of-type(2)>main section:nth-of-type(3),
+main section:nth-of-type(2)>main section:nth-of-type(4) {
+	background-color: #182026;
+}
+
+
+/****************/
+/* section 1: toolbar en background image */
+/****************/
+
+
+/* form thingies */
+
+main section:nth-of-type(1) form input {
+	min-width: 23rem;
+	max-width: 37.5rem;
+	padding: 1em;
+}
+
+/* knoppies verstoppen */
+main section:nth-of-type(1) form label,
+main section:nth-of-type(1) form button {
+	/* 	https://www.a11yproject.com/posts/how-to-hide-content/ */
+	position: fixed;
+	left: -9999em;
+
+}
+
+/****************/
+/* tekst section 1 en achtergrond  */
+/****************/
+
+
+main>section:first-of-type {
+	min-height: 20em;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main>section:first-of-type img {
+	min-width: 100vw;
+	height: 23em;
+	object-fit: cover;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+main>section:first-of-type h2 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+@media (min-width:43em) {
+	main>section:first-of-type h2 {
+		font-size: 2.5em;
+	}
+
+
+}
+
+
+
+/****************/
+/* overkoepelende section 2,3 en 4  */
+/****************/
+
+section:nth-of-type(2) section{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 43em;
+	background-color: #182026;
+}
+
+/* Section 2: checkmark list zooi */
+
+section:nth-of-type(2) section:first-of-type {
+	color: white;
+	background-color: #182026;
+	margin-top: 1em;
+	width: 100%;
+}
+
+section:nth-of-type(2) section:first-of-type ul * {
+	margin: 0;
+	padding: 0;
+}
+
+section:nth-of-type(2) section:first-of-type ul {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	width: 100%;
+}
+
+main section:nth-of-type(2) section:first-of-type ul li svg {
+	display: grid;
+	width: 1.5em;
+	margin-right: .6em;
+}
+
+main section:nth-of-type(2) section:first-of-type ul li svg path {
+	fill: lightskyblue;
+}
+
+main section:nth-of-type(2) section:first-of-type ul li {
+	display: flex;
+	column-gap: 0;
+	margin: 0;
+}
+
+/* styling zoek evenementen */
+
+
+main section:nth-of-type(2) section:nth-of-type(2) {
+	display: grid;
+	justify-content: center;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) h2 {
+	margin: 0;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) ul {
+	/* display: grid;
+	justify-content: center; */
+	padding: 0;
+	background-color: #182026;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) ul li {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 5em 1fr;
+	column-gap: 0;
+	margin: 1em;
+	margin-left: 0;
+	;
+	border-radius: 1em;
+	background-color: rgba(1, 0, 15, 0.528);
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) ul li:hover {
+	background-color: rgba(82, 98, 171, 0.429);
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) ul li svg:nth-of-type(1) {
+	width: 60%;
+
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	margin-left: .5em;
+
+	padding: .5em;
+	border-radius: 10px;
+	background-color: orange;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) ul li svg:nth-of-type(2) {
+	background-color: green;
+	margin: 10em;
+}
+
+
+main section:nth-of-type(2) section:nth-of-type(2) ul li h3,
+main section:nth-of-type(2) section:nth-of-type(2) ul li p {
+	margin: 0.3em;
+	align-self: center;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) ul li svg path {
+	fill: white;
+
+}
+
+/* queries a drerrie */
+
+@media (min-width:43em) {
+
+	main section:nth-of-type(2) section:nth-of-type(2) {
+		display: grid;
+		justify-content: center;
+	}
+
+	main section:nth-of-type(2) section:nth-of-type(2)>ul>li {
+		width: 37.5em;
+	}
+
+	main section:nth-of-type(2) section:nth-of-type(2) ul {
+		display: grid;
+		justify-content: center;
+	}
+
+}
+
+/* Styling interview plaatjes en text */
+
+section:nth-of-type(2) section:nth-of-type(3)>h2,
+section:nth-of-type(4)>p {
+	margin: 1rem;
+}
+
+section:nth-of-type(2) section:nth-of-type(3) ul {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	gap: 1em;
+	list-style: none;
+	margin: 0;
+	padding: 1em;
+
+}
+
+section:nth-of-type(2) section:nth-of-type(3) li {
+	display: grid;
+	align-content: center;
+	gap: 1em;
+	height: 16em;
+	overflow: hidden;
+	border-radius: 1em;
+}
+
+section:nth-of-type(2) section:nth-of-type(3) a {
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color: white;
+}
+
+section:nth-of-type(2) section:nth-of-type(3) div {
+	position: absolute;
+	bottom: 3.5em;
+	left: 1em;
+	z-index: 100;
+}
+
+section:nth-of-type(2) section:nth-of-type(3) div * {
+	margin: 0;
+}
+
+section:nth-of-type(2) section:nth-of-type(3) img {
+	display: block;
+	object-fit: fill;
+
+}
