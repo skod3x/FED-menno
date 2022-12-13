@@ -1,71 +1,3 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-	font-family: proxima-nova, sans-serif;
-}
-
-button,
-summary {
-	cursor: pointer;
-}
-
-button:not(disabled) {
-	cursor: pointer;
-}
-
-
-/* ALGEMENE SHIT  */
-
-:root {
-	/* startje */
-	--color-text: #111;
-	--color-background: #eee;
-}
-
-body {
-	color: white;
-	background-color: #182026;
-	margin: 0;
-}
-
-.visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
-
-/* tekst shit  */
-
-
-h2 {
-	font-weight: 700;
-	font-style: normal;
-}
-
-h3 {
-
-	font-size: 1.1em;
-	font-weight: 400;
-	font-style: normal;
-}
-
-p {
-	max-width: 75%;
-	font-size: .8em;
-	font-weight: 300;
-	font-style: normal;
-}
-
-
 /* HEADER SHIT */
 
 header {
@@ -93,7 +25,7 @@ header button {
 
 	/* standaard styling aanpassen */
 	appearance: none;
-	background-color:transparent;
+	background-color: transparent;
 	border: none;
 	color: white;
 }
@@ -103,7 +35,7 @@ header button svg {
 }
 
 header button svg path {
-	fill:white;
+	fill: white;
 }
 
 
@@ -111,10 +43,10 @@ header button svg path {
 
 
 header>nav {
-	padding:1em;
-	display:grid;
-	align-content:start;
-	gap:1em;
+	padding: 1em;
+	display: grid;
+	align-content: start;
+	gap: 1em;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -122,21 +54,21 @@ header>nav {
 	right: 0;
 	background-color: #182026;
 	transform: translateX(-100%);
-	transition:transform .3s;
+	transition: transform .3s;
 }
 
 nav.toonMenu {
-	transform:translatex(0);
-  }
-
-nav button {
-	justify-self:end;
+	transform: translatex(0);
 }
 
-nav ul { 
-	margin:0; 
-	padding:0em;
-	list-style:none;
+nav button {
+	justify-self: end;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0em;
+	list-style: none;
 }
 
 nav ul li {
@@ -145,13 +77,13 @@ nav ul li {
 
 nav a {
 	/* icon en tekst met gap-je naast elkaar */
-	display:flex;
-	align-items:center;
+	display: flex;
+	align-items: center;
 	justify-content: center;
-	column-gap:.25em;
-	
-	border-bottom:solid 1px var(--menu-border);
-  }
+	column-gap: .25em;
+
+	border-bottom: solid 1px var(--menu-border);
+}
 
 /****************************************************************/
 /* Header styling bij groot scherm */
@@ -159,26 +91,26 @@ nav a {
 
 @media (min-width:48em) {
 
-	header > button {
-		display:none;
+	header>button {
+		display: none;
 	}
-	
+
 	nav {
-		position:static;
-		transform:none;
-		padding:0;
-		background:none;
+		position: static;
+		transform: none;
+		padding: 0;
+		background: none;
 	}
-	
+
 	nav button {
-		display:none;
+		display: none;
 	}
-	
+
 	nav ul {
-		transform:translatex(110%);
-		display:flex;
+		transform: translatex(110%);
+		display: flex;
 		justify-content: center;
-		gap:1em;
+		gap: 1em;
 	}
 
 	/* nav> ul li:first-of-type {
@@ -186,43 +118,44 @@ nav a {
 	} */
 
 	nav ul li a {
-		color:white;
+		color: white;
 	}
-	
+
 	nav a {
-		flex-direction:column;
-		border:none;
+		flex-direction: column;
+		border: none;
 	}
-	
-	header > a:last-of-type {
-		flex-direction:column;
+
+	header>a:last-of-type {
+		flex-direction: column;
 	}
-  }
+}
 
 /****************************************************************/
 /* styling header voor nog groter scherm */
 /****************************************************************/
 
 @media (min-width:43em) {
-	header > a:last-of-type,
+
+	header>a:last-of-type,
 	nav a {
-		flex-direction:row;
+		flex-direction: row;
 	}
 }
 
 /* logo */
 
 
-header>a svg {
+header a svg {
 	width: 12em;
 	padding: 1em;
 }
 
-header>a svg path {
+header a svg path {
 	fill: white;
 }
 
-header>a:hover svg path {
+header a:hover svg path {
 	fill: lightgrey;
 }
 
@@ -260,9 +193,10 @@ main section:nth-of-type(1) form button {
 
 }
 
-/****************/
+
+/***********************************/
 /* tekst section 1 en achtergrond  */
-/****************/
+/***********************************/
 
 
 main>section:first-of-type {
@@ -294,25 +228,27 @@ main>section:first-of-type h2 {
 	main>section:first-of-type h2 {
 		font-size: 2.5em;
 	}
-
-
 }
 
 
 
-/****************/
+/************************************/
 /* overkoepelende section 2,3 en 4  */
-/* overkoepelende section 2,3 en 4  */
-/****************/
+/************************************/
 
-section:nth-of-type(2) section{
+
+section:nth-of-type(2) section {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 43em;
 	background-color: #182026;
 }
 
+
+
 /* Section 2: checkmark list zooi */
+
+
 
 section:nth-of-type(2) section:first-of-type {
 	color: white;
@@ -349,7 +285,11 @@ main section:nth-of-type(2) section:first-of-type ul li {
 	margin: 0;
 }
 
+
+
 /* styling zoek evenementen */
+
+
 
 
 main section:nth-of-type(2) section:nth-of-type(2) {
@@ -375,7 +315,6 @@ main section:nth-of-type(2) section:nth-of-type(2) ul li {
 	column-gap: 0;
 	margin: 1em;
 	margin-left: 0;
-	;
 	border-radius: 1em;
 	background-color: rgba(1, 0, 15, 0.528);
 }
@@ -414,7 +353,11 @@ main section:nth-of-type(2) section:nth-of-type(2) ul li svg path {
 
 }
 
+
+
 /* queries a drerrie */
+
+
 
 @media (min-width:43em) {
 
@@ -434,12 +377,11 @@ main section:nth-of-type(2) section:nth-of-type(2) ul li svg path {
 
 }
 
+
+
 /* Styling interview plaatjes en text */
 
-section:nth-of-type(2) section:nth-of-type(3)>h2,
-section:nth-of-type(4)>p {
-	margin: 1rem;
-}
+
 
 section:nth-of-type(2) section:nth-of-type(3) ul {
 	display: grid;
@@ -456,16 +398,9 @@ section:nth-of-type(2) section:nth-of-type(3) li {
 	display: grid;
 	align-content: center;
 	gap: 1em;
-	height: 16em;
+	height: 16rem;
 	overflow: hidden;
 	border-radius: 1em;
-}
-
-section:nth-of-type(2) section:nth-of-type(3) a {
-	display: block;
-	position: relative;
-	text-decoration: none;
-	color: white;
 }
 
 section:nth-of-type(2) section:nth-of-type(3) div {
@@ -479,8 +414,32 @@ section:nth-of-type(2) section:nth-of-type(3) div * {
 	margin: 0;
 }
 
-section:nth-of-type(2) section:nth-of-type(3) img {
+section:nth-of-type(2) section:nth-of-type(3) a {
 	display: block;
-	object-fit: fill;
+	position: relative;
+	text-decoration: none;
+	color: white;
+}
 
+section:nth-of-type(2) section:nth-of-type(3)>h2,
+section:nth-of-type(2) section:nth-of-type(3)>p {
+	margin-left: 1rem;
+}
+
+
+
+/* section:nth-of-type(2) section:nth-of-type(3) img {
+	object-fit: cover;
+	overflow: hidden;
+
+
+} */
+
+
+@media (min-width:43em) {
+
+	section:nth-of-type(2) section:nth-of-type(3)>h2,
+	section:nth-of-type(2) section:nth-of-type(3)>p {
+		margin-left: 2.5rem;
+	}
 }

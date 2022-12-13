@@ -1,0 +1,66 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: proxima-nova, sans-serif;
+}
+
+button,
+summary {
+	cursor: pointer;
+}
+
+button:not(disabled) {
+	cursor: pointer;
+}
+
+
+/* ALGEMENE SHIT  */
+
+
+:root {
+	--color-text: #111;
+	--color-background: #eee;
+}
+
+body {
+	color: white;
+	background-color: #182026;
+	margin: 0;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+
+/* tekst opmaak */
+
+
+h2 {
+	font-weight: 700;
+	font-style: normal;
+}
+
+h3 {
+
+	font-size: 1.1em;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p {
+	max-width: 75%;
+	font-size: .8em;
+	font-weight: 300;
+	font-style: normal;
+}
