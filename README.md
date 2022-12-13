@@ -266,17 +266,21 @@ alleen kleine items zijn moeilijk te vinden met de tunnelvisiebril
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screen1.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="readme-images/screen2.png" width="375px" alt="top">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb tijdens dit vak heel veel geleerd, helaas ging er alsnog veel fout
+  ik heb geleerd gebruik te maken van mediaqueries, grid, een veel diepere sprong in flexbox en javascript combineren met html/css. Het gebruiken van grid begon lastig maar met wat hulp kwam ik er uit en zag ik hoeveel je er mee kon doen. Ook dingen zoals emmet en de mogelijkheden hiermee vond ik fascinerend.
+  In het plaatje zie je hoe ik met grid 3 boxes heb gemaakt en het logo links en de tekst rechts. Dit was moelijker dan het eruit zag!
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/screen3.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Helaas is de website half af en zijn er veel dingen wat niet is gelukt.
+  Het hamburger menu in orde krijgen bijvoorbeeld, het positioneren van de li in de nav en ervoor zorgen dat het bij een bepaald breakpoint weer tevoorschijn kwam boven aan de pagina leek wel onmogelijk. Ook kwam ik er op het einde achter dat ik de responsiveness verkeerd heb bekeken in de browser en mn hele site is dus blijkbaar links uitgelijnd. Ik hoop dat iemand me uit het diepe wilt trekken met wat goede feedback waardoor ik bij de herkansing een voldoende kan halen!
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -292,8 +296,8 @@ alleen kleine items zijn moeilijk te vinden met de tunnelvisiebril
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
+  1. codepen 2 uitwerkingen (fold out menu)
+  2. svg'tjes van ticketswap.nl
   3. ...
 
 </details>
