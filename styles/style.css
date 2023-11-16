@@ -232,38 +232,67 @@ main>section:first-of-type img {
 
 /* kop en form  */
 
-main>section:first-of-type div {
+main>section:first-of-type > div {
 	position: absolute;
 	inset:0; /* top right bottom en left in 1 keer */
-
 	display: grid;
 	align-items: center;
 	align-content: center;
-	/* gap:1em; */
 }
 
 main>section:first-of-type h2 {
 	font-size: 1.5em;
 	margin: 0;
 	padding:1rem;
-	/* max-width: 37.5rem; */
+	padding-bottom: 0;
 }
 
 
 /* form thingies */
 
-main section:nth-of-type(1) form {
-	padding:1rem;
+main section:nth-of-type(1) > form {
 	display:flex;
+	padding:1rem;
 	justify-content: center;
+	height:3em;
+	
+	
 }
 
 main section:nth-of-type(1) form input {
 	/* min-width: 23rem; */
+	
 	width:100%;
 	max-width: 37.5rem;
 	padding: 1em;
+	background-color: #182026;
+	border: none;
+	border-radius: 0em 1em 1em 0em;
+	
 }
+
+main section:first-of-type div form div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:1em;
+	max-width: 100%;
+	height:3em;
+	
+}
+
+main section:first-of-type div form div svg {
+	background-color: #182026;
+	max-height: 3em;
+	border-radius: 1em 0em 0em 1em;
+	
+}
+
+main section:first-of-type div form div svg path {
+	fill:white;
+	
+}
+
 
 /* knoppies verstoppen */
 main section:nth-of-type(1) form label,
@@ -280,7 +309,6 @@ main section:nth-of-type(1) form button {
 	main>section:first-of-type h2 {
 		font-size: 2.5em;
 		text-align: center;
-		max-width: 12em;
 		margin:0 auto;
 	}
 }
@@ -362,7 +390,8 @@ main section:nth-of-type(2) section:nth-of-type(2) {
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) h2 {
-	margin: 0;
+	margin:0;
+	min-height: 2em;
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul {
