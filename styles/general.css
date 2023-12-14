@@ -22,8 +22,10 @@ button:not(disabled) {
 
 
 :root {
-	--color-text: #111;
-	--color-background: #eee;
+	--just-black: black;
+	--button-color: green;
+    --text-color: white;
+    --background-color: #182026;
 }
 
 body {

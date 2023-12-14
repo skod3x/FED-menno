@@ -285,7 +285,16 @@ alleen kleine items zijn moeilijk te vinden met de tunnelvisiebril
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
+## improvements herkansing jaar 2
 
+Aangezien dit vak niet af was voor vorig jaar heb ik de volgende dingen gefixed:
+
+meer gelet op responsiveness
+pop out menu gefixed en animatie toegevoegd
+flex op veel plekken opgegeven en opnieuw geschreven met grid
+minder letten op precies namaken en gaan voor dingen responsive maken
+pagina 2 verder afgemaakt, hierbij ook meer sections gaan nesten, wat het responsive maken een stuk makkelijker maakte
+gelet op toegankelijkheid (visually hiding things, span, duidelijke alt, alles een naam geven)
 
 
 

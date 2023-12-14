@@ -1,3 +1,22 @@
+:root {
+	--just-black: black;
+	--button-color: #05ab52;
+    --step-border: #00b6f0;
+    --text-color: white;
+    --background-color: #182026;
+    --header-background: #163949;
+    --section-highlight:#1a2129;
+	--just-red: red;
+	--checkmark-blue: lightskyblue;
+	--just-orange: orange;
+	--just-green: green;
+	--event-background: rgba(1, 0, 15, 0.528);
+	--event-background-light: rgba(82, 98, 171, 0.429);
+	--gradient-overlay: rgba(0, 0, 0, 0.288);
+	--ticket-count: rgb(104, 207, 241);
+	--justgrey:grey;
+}
+
 /* HEADER SHIT */
 
 header {
@@ -7,7 +26,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* top: 0; */
 
 	position:absolute;
 	top:0;
@@ -27,21 +45,16 @@ header > a {
 header button {
 	padding: .5em;
 
-	/* icon en tekst met gap-je naast elkaar */
-	/* display: flex; */
-	/* align-items: center; */
-	/* gap: .25em; */
-
 	/* standaard styling aanpassen */
 	appearance: none;
 	background-color: transparent;
 	border: none;
-	/* color: white; */
 }
 
 header button svg {
 	height: 3em;
 	width:auto;
+	margin:.5em;
 }
 
 header button svg path {
@@ -64,7 +77,7 @@ header>nav {
 	align-content: start;
 	gap: 1em;
 	
-	background-color: #182026;
+	background-color: --background-color;
 	transform: translateX(-100%);
 	transition: transform .3s;
 }
@@ -82,7 +95,7 @@ nav button {
 	align-items: center;
 	gap:.25em;
 
-	color:white;
+	color:var(--text-color);
 }
 
 nav ul {
@@ -91,20 +104,16 @@ nav ul {
 	list-style: none;
 }
 
-nav ul li {
-	/* justify-content: center; */
-}
 
 nav a {
 	/* icon en tekst met gap-je naast elkaar */
+	color: var(--text-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	column-gap: .25em;
 
 	padding:1em;
-
-	border-bottom: solid 1px var(--menu-border);
 
 	text-decoration: none;
 }
@@ -141,7 +150,7 @@ nav a {
 	}
 
 	nav ul li a {
-		color: white;
+		color: var(--text-color);
 		padding:1em .5em;
 	}
 
@@ -186,7 +195,7 @@ main section:nth-of-type(2)>section:first-of-type,
 main section:nth-of-type(2)>main section:nth-of-type(2),
 main section:nth-of-type(2)>main section:nth-of-type(3),
 main section:nth-of-type(2)>main section:nth-of-type(4) {
-	background-color: #182026;
+	background-color: var(--background-color);
 }
 
 
@@ -265,7 +274,7 @@ main section:nth-of-type(1) form input {
 	width:100%;
 	max-width: 37.5rem;
 	padding: 1em;
-	background-color: #182026;
+	background-color: var(--background-color);
 	border: none;
 	border-radius: 0em 1em 1em 0em;
 	
@@ -282,15 +291,15 @@ main section:first-of-type div form div {
 }
 
 main section:first-of-type div form div svg {
-	background-color: #182026;
-	max-height: 3em;
+	background-color: var(--background-color);
+	height: 100%;
 	border-radius: 1em 0em 0em 1em;
-	
+	width: 30px;
+	padding-inline: 4px;
 }
 
 main section:first-of-type div form div svg path {
 	fill:white;
-	
 }
 
 
@@ -327,8 +336,6 @@ main > section:nth-of-type(2) {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 43em;
-	/* background-color: #182026; */
-
 	padding:1em;
 	display:grid;
 	gap:1em;
@@ -341,34 +348,22 @@ main > section:nth-of-type(2) {
 
 
 section:nth-of-type(2) section:first-of-type {
-	color: white;
-	/* background-color: #182026; */
-	/* margin-top: 1em; */
-	/* width: 100%; */
+	color: var(--text-color);
 }
 
 section:nth-of-type(2) section:first-of-type ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* align-items: center; */
-	/* width: 100%; */
 }
 
 main section:nth-of-type(2) section:first-of-type ul li {
 	display: flex;
 	gap:.25em;
-	/* column-gap: 0; */
-	/* margin: 0; */
 }
 
 main section:nth-of-type(2) section:first-of-type ul li svg {
-	/* display: grid; */
 	width: 1.5em;
-	/* margin-right: .6em; */
 }
 
 main section:nth-of-type(2) section:first-of-type ul li svg path {
@@ -382,13 +377,6 @@ main section:nth-of-type(2) section:first-of-type ul li svg path {
 /* styling zoek evenementen */
 
 
-
-
-main section:nth-of-type(2) section:nth-of-type(2) {
-	/* display: grid; */
-	/* justify-content: center; */
-}
-
 main section:nth-of-type(2) section:nth-of-type(2) h2 {
 	margin:0;
 	min-height: 2em;
@@ -401,7 +389,7 @@ main section:nth-of-type(2) section:nth-of-type(2) ul {
 	padding: 0;
 	margin:0;	
 	list-style: none;
-	background-color: #182026;
+	background-color: var(--background-color);
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul li {
@@ -409,16 +397,13 @@ main section:nth-of-type(2) section:nth-of-type(2) ul li {
 	align-items: center;
 	grid-template-columns: 3em 1fr;
 	column-gap:.5em;
-	/* column-gap: 0; */
-	/* margin: 1em; */
-	/* margin-left: 0; */
 	border-radius: 1em;
-	background-color: rgba(1, 0, 15, 0.528);
+	background-color:var(--event-background);
 	padding:.75em;
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul li:hover {
-	background-color: rgba(82, 98, 171, 0.429);
+	background-color: var(--event-background-light);
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul li h3,
@@ -442,19 +427,19 @@ main section:nth-of-type(2) section:nth-of-type(2) ul li svg {
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul li:nth-of-type(1) svg {
-	background-color: orange;
+	background-color: var(--just-orange);
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul li:nth-of-type(2) svg {
-	background-color: green;
+	background-color: var(--just-green);
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul li:nth-of-type(3) svg {
-	background-color: red;
+	background-color: var(--just-red);
 }
 
 main section:nth-of-type(2) section:nth-of-type(2) ul li svg path {
-	fill: white;
+	fill: var(--text-color);
 }
 
 
@@ -501,7 +486,7 @@ section:nth-of-type(2) section:nth-of-type(3) div {
 	left:0;
 	z-index: 100;
 	padding:1em;
-	background-color: rgba(0, 0, 0, 0.288);
+	background-color: var(--gradient-overlay);
 }
 
 section:nth-of-type(2) section:nth-of-type(3) div * {
@@ -513,7 +498,7 @@ section:nth-of-type(2) section:nth-of-type(3) a {
 	display: block;
 	position: relative;
 	text-decoration: none;
-	color: white;
+	color: var(--text-color);
 
 }
 
@@ -526,15 +511,6 @@ section:nth-of-type(2) section:nth-of-type(3) img {
 	object-position: 65% 40%;
 }
 
-
-
-@media (min-width:43em) {
-
-	section:nth-of-type(2) section:nth-of-type(3)>h2,
-	section:nth-of-type(2) section:nth-of-type(3)>p {
-	
-	}
-}
 
 
 /************************/
@@ -562,7 +538,7 @@ section:nth-of-type(2) section:nth-of-type(4) ul li {
 	padding:1em;
 	border-radius: 1em;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 0.288);
+	background-color: var(--gradient-overlay);
 }
 
 /* margin van alles in de 1e div op 0 */
@@ -579,12 +555,12 @@ section:nth-of-type(2) section:nth-of-type(4) ul li div:nth-of-type(2) {
 	justify-content: center;
 	justify-self: end;
 	margin-right:.75em;
-	background-color: rgb(104, 207, 241);
-	border-color: rgb(104, 207, 241);
+	background-color: var(--ticket-count);
+	border-color: var(--ticket-count);
 	border-radius: 1em;
 	width:3em;
 	height: 1.5em;
-	color:white;
+	color:var(--text-color);
 }
 
 /* alle icons in de section */
@@ -608,23 +584,23 @@ section:nth-of-type(2) section:nth-of-type(4) ul li div:nth-of-type(1) > p {
 	font-size: .8em;
 	font-weight: 300;
 	font-style: normal;
-	color:grey;
+	color:var(--justgrey);
 }
 
 /* time tag en svg rood maken */
 
 section:nth-of-type(2) section:nth-of-type(4) ul li div:nth-of-type(1) > time {
-	color:red;
+	color:var(--just-red);
 }
 
 section:nth-of-type(2) section:nth-of-type(4) ul li div:nth-of-type(1) > svg path {
-	fill:red;
+	fill:var(--just-red);
 }
 
 /* ticket logo rechts wit maken */
 
 section:nth-of-type(2) section:nth-of-type(4) ul > li > div:nth-of-type(2) svg path {
-	fill:white;
+	fill:var(--text-color);
 }
 
 /* queries evenementenblokken naast elkaar */
